@@ -4,5 +4,9 @@ h1 {
 
 .subtext {
     max-width: 750px;
-    margin: 0 auto
+    margin: 0 auto;
+    width: 300px;
+    border: 10px solid #927373;
+    padding: 50px;
+    margin: 20px;
 }
