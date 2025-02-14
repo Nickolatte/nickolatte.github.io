@@ -1,12 +1,57 @@
-h1 {
-    text-align: center;
+body {
+    margin: 0;
+    background-color: #d9d8dd;
 }
 
-.subtext {
-    max-width: 750px;
-    margin: 0 auto;
-    width: 300px;
-    border: 10px solid #927373;
-    padding: 50px;
-    margin: 20px;
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ece8e6;
+    position: sticky;
+    top: 0;
+
+    #spacer {
+        flex-grow: 1;
+    }
+
+    a {
+        background-color: white;
+    }
+}
+
+h1 {
+    text-align: left;
+    font-size: 15px;
+}
+
+
+
+.v200w {
+    animation: spin 2s linear infinite forwards;
+}
+
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+
+.pfp {
+    border-radius: 50%;
+    display: block;
+
+    margin-right: 16px;
+    max-width: 300px;
+    float: left;
+}
+
+main {
+    max-width: 850px;
+    margin: 32px auto;
 }
