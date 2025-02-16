@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #d9d8dd;
+    background-color: #867baf;
 }
 
 header {
@@ -14,20 +14,40 @@ header {
         flex-grow: 1;
     }
 
-    a {
-        background-color: white;
-    }
+    
 }
 
+#github {
+    content: url("github.png");
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+#twitter{
+    content: url("twitter-alt-square.png");
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+
+
+
+}
 h1 {
     text-align: left;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
 
 .v200w {
-    animation: spin 2s linear infinite forwards;
+    animation: spin 10s linear infinite forwards;
+    cursor: pointer;
+}
+#top {
+    position: absolute;
+    top: 0;
 }
 
 @keyframes spin {
@@ -38,6 +58,8 @@ h1 {
     to {
         rotate: 360deg;
     }
+
+    
 }
 
 
