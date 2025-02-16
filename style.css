@@ -19,16 +19,16 @@ header {
 
 #github {
     content: url("github.png");
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 10px;
 
 }
 
 #twitter{
     content: url("twitter-alt-square.png");
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 10px;
 
 
