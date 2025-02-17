@@ -18,7 +18,7 @@ header {
 }
 
 #github {
-    content: url("github.png");
+    content: url("./github.png");
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -26,14 +26,21 @@ header {
 }
 
 #twitter {
-    content: url("twitter-alt-square.png");
+    content: url("./twitter-alt-square.png");
     width: 40px;
     height: 40px;
     padding: 10px;
 
+}
 
+#linkedin {
+    content: url("./linkedin.png");
+    width: 40px;
+    height: 40px;
+    padding: 10px;
 
 }
+
 
 h1 {
     text-align: left;
