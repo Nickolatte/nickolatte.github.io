@@ -1,0 +1,37 @@
+:root {
+    --green-200: hsl(148, 38%, 91%);
+    --Green-600: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+
+    --White: hsl(0, 0%, 100%);
+    --Grey-500: hsl(186, 15%, 59%);
+    --Grey-900: hsl(187, 24%, 22%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--green-200);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.rounded-box {
+    width: 500px;
+    height: 450px;
+    padding: 20px;
+    background-color: var(--White);
+    color: var(--Grey-900);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
