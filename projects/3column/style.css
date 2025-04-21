@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+    --lexend-ceda: "Lexend Deca", sans-serif;
+    --big-shoulders: "Big Shoulders Display", cursive;
+    --light-gray: hsl(0, 0%, 95%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+
+    overflow-y: scroll;
+    background-color: var(--light-gray);
+    font-size: 0.93rem;
+}
+
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 57.4rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10.8rem;
+    margin-bottom: 10.8rem;
+    align-items: center;
+}
+
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+
+.container-one,
+.container-two,
+.container-three {
+    padding: 3rem;
+}
+
+
+.icon {
+    width: 30%;
+    height: 80%;
+}
+
+
+.headings {
+    color: var(--light-gray);
+    font-family: var(--big-shoulders);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+
+.descriptions {
+    color: var(--transparent-white);
+    font-family: var(--lexend-ceda);
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+.buttons {
+    background-color: var(--light-gray);
+    border-color: transparent;
+    border-radius: 35px;
+    font-family: var(--lexend-ceda);
+    width: 55.5%;
+    text-transform: capitalize;
+    margin-top: 3.4rem;
+    padding: 0.9rem;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.container-one {
+    background-color: var(--bright-orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.container-one a {
+    color: var(--bright-orange);
+}
+
+
+.container-two {
+    background-color: var(--dark-cyan);
+}
+
+.container-two a {
+    color: var(--dark-cyan);
+}
+
+
+.container-three {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 5px 5px 0;
+}
+
+.container-three a {
+    color: var(--very-dark-cyan);
+}
+
+@media (hover: hover) {
+    .buttons:hover {
+        border-color: var(--light-gray);
+        background-color: transparent;
+        cursor: pointer;
+        transition: all ease-in-out 0.3s;
+        color: var(--light-gray);
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .main-container {
+        flex-direction: column;
+        margin-top: 5.3rem;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .info-container {
+        gap: 1rem;
+    }
+
+    .container-one {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .container-two {
+        border-radius: 0;
+    }
+
+    .container-three {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .container-one,
+    .container-two,
+    .container-three {
+        width: 50%;
+    }
+
+    .buttons {
+        width: 40%;
+        margin-top: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+
+        .container-one,
+        .container-two,
+        .container-three {
+            width: 80%;
+        }
+    }
+}
